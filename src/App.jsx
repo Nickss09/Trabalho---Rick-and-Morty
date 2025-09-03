@@ -1,6 +1,4 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
 
 function App() {
@@ -8,26 +6,40 @@ function App() {
 
   return (
     <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+      {/* Titulo*/}
+      <div className="Título">
+        <p className="texto-título">Rick and Morty Characters</p>
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
+
+      {/* Foto*/}
+      <div className="Foto">
+        <img src="https://rickandmortyapi.com/api/character/avatar/1.jpeg" alt="foto do rick" className="fotoDoRick" />
       </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+
+      {/* Campos */}
+      <div className="box-campos">
+        <div className="campos">
+          <div className="nome">
+            <p>Nome: Rick Sanchez</p>
+          </div>
+          <div className="status">
+            <p>Status: Vivo</p>
+          </div>
+          <div className="especie">
+            <p>Espécie: Humano</p>
+          </div>
+          <div className="genero">
+            <p>Gênero: Masculino</p>
+          </div>
+          <div className="ultimo-epsodio">
+            <p>Último episódio que ele aparece: <a href="https://rickandmortyapi.com/api/episode/51">Rickmurai Jack</a></p>
+          </div>
+        </div>
+      </div>
+      {/* Botão*/}
+      <div className="botão">
+        <button><p>Mudar o personagem</p></button>
+      </div>
     </>
   )
 }
