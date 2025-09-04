@@ -1,0 +1,24 @@
+button {
+  border-radius: 8px;
+  border: 1px solid gray;
+  padding: 10px;
+  font-size: 15px;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #d2c9b8;
+  cursor: pointer;
+  box-shadow: 4px 4px 4px 0px #00000033;
+  transition: border-color 0.25s;
+}
+
+.botão {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+button:hover {
+  border-color: #000000;
+}

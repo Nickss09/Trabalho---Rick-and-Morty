@@ -1,57 +1,9 @@
 body {
-  margin: 0;
+  padding: 42px;
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  background-color: #b2daed;
-}
-.Título{
-  width: auto;
-  height: 146px;
-  background-color: #fcfcfc;
-  border-radius: 15px;
-  display: flex;
+  margin: 0px;
   flex-direction: column;
   align-items: center;
-  align-content: stretch;
   justify-content: center;
-  gap: 15px;
-}
-
-.texto-título{
-  width: 259px;
-  height: 76px;
-}
-.Foto{
-  align-items: center;
-}
-.fotoDoRick{
-  border-radius: 15px;
-}
-
-.box-campos{
-  background-color: #5793b2;
-  border-radius: 15px;
-}
-.campos{
-
-}
-
-button {
-  border-radius: 8px;
-  border: 1px solid gray;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #d2c9b8;
-  cursor: pointer;
-}
-button:hover {
-  border-color: #000000;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
+  background-color: #b2daed;
 }

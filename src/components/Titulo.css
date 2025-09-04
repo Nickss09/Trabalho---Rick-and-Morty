@@ -1,0 +1,23 @@
+.Título {
+  width: auto;
+  height: 146px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: stretch;
+  justify-content: center;
+  background-color: #fcfcfc;
+  border-radius: 15px;
+  border: solid black 1px;
+  box-shadow: 4px 4px 4px 0px #00000033;
+  margin-bottom: 50px;
+}
+
+.texto-título {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin: 0px;
+  width: 259px;
+  height: auto;
+}

@@ -1,0 +1,19 @@
+.box-campos {
+  background-color: #5793b2;
+  border-radius: 15px;
+  width: auto;
+  height: auto;
+  box-shadow: 4px 4px 4px 0px #00000033;
+  border: solid black 1px;
+}
+
+.campos {
+  padding: 10px;
+}
+
+p {
+  margin: 15px;
+  font-size: 15px;
+  font-weight: 500;
+  font-family: inherit;
+}

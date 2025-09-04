@@ -1,0 +1,12 @@
+.Foto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.fotoDoRick {
+    border-radius: 15px;
+    border: solid black 2px;
+    box-shadow: 4px 4px 4px 0px #00000033;
+    margin-bottom: 50px;
+}
