@@ -3,9 +3,13 @@ import './Botao.css'
 
 function Botao() {
   return (
+    // const [count, setCount] = useState(0)
     <>
       <div className="botão">
-        <button><p>Mudar o personagem</p></button>
+       {/* <button onClick={() => setCount((count) => count + 1)}> count is {count} </button> */}
+      <button>
+        <p>Mudar personagem</p>
+        </button>
       </div>
     </>
   )
