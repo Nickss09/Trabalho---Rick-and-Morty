@@ -1,29 +1,29 @@
-import React from 'react'
-import './Campos.css'
+import React, { useEffect, useState } from 'react';
+import './Campos.css';
 
-function Campos() {
+function Campos({ id }) {
+    const [personagem, setPersonagem] = useState(null);
+
+    useEffect(() => {
+        fetch(`https://rickandmortyapi.com/api/character/${id}`)
+            .then(res => res.json())
+            .then(data => setPersonagem(data))
+            .catch(err => console.error(err));
+    }, [id]);
+
     return (
-        <>
-            <div className="box-campos">
+        <div className="box-campos">
+            {personagem && (
                 <div className="campos">
-                    <div className="letra">
-                        <p>Nome: Rick Sanchez</p>
-                    </div>
-                    <div className="letra">
-                        <p>Status: Vivo</p>
-                    </div>
-                    <div className="letra">
-                        <p>Espécie: Humano</p>
-                    </div>
-                    <div className="letra">
-                        <p>Gênero: Masculino</p>
-                    </div>
-                    <div className="letra">
-                        <p>Último episódio que ele aparece: <a href="https://rickandmortyapi.com/api/episode/51">Rickmurai Jack</a></p>
-                    </div>
+                    <p> Name: {personagem.name}</p>
+                    <p> Status: {personagem.status}</p>
+                    <p> Species: {personagem.species}</p>
+                    <p> Gender: {personagem.gender}</p>
+                    <p> Last Location: {personagem.location.name}</p>
                 </div>
-            </div>
-        </>
-    )
+            )}
+        </div>
+    );
 }
-export default Campos
+
+export default Campos;

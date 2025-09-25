@@ -1,11 +1,14 @@
 import React from 'react'
 import './Foto.css'
 
-function Foto() {
+function Foto({ id }) {
   return (
     <>
       <div className="Foto">
-        <img src="https://rickandmortyapi.com/api/character/avatar/1.jpeg" alt="foto do rick" className="fotoDoRick" />
+        <img 
+        src={`https://rickandmortyapi.com/api/character/avatar/${id}.jpeg`}
+        alt="Personagem de Rick and Morty"
+        className="fotoPersonagem" />
       </div>
     </>
   )
