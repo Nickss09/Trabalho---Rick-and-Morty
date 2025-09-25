@@ -1,5 +1,5 @@
 import './App.css'
-import React, { Suspense, useState } from 'react';
+import React, { useState } from 'react';
 import Titulo from './components/Titulo'
 import Foto from './components/Foto';
 import Campos from './components/Campos';

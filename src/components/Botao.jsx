@@ -3,7 +3,7 @@ import './Botao.css'
 
 function Botao({ quandoClicar }) {
   return (
-    <div className="botão">
+    <div className="botao">
       <button onClick={quandoClicar}>
         <p>Change Character</p>
       </button>
